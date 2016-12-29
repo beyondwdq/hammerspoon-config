@@ -176,3 +176,31 @@ hs.hotkey.bind(hyper, "i", function ()
   cell = hs.grid.get(win, screen)
   hs.alert.show(cell)
 end)
+
+hs.hotkey.bind(hyper, "h", function ()
+  local win = hs.window.focusedWindow()
+  if win then
+    win:moveOneScreenWest(0)
+  end
+end)
+
+hs.hotkey.bind(hyper, "l", function ()
+  local win = hs.window.focusedWindow()
+  if win then
+    win:moveOneScreenEast(0)
+  end
+end)
+
+hs.hotkey.bind(hyper, "j", function ()
+  local win = hs.window.focusedWindow()
+  if win then
+    win:moveOneScreenSouth(0)
+  end
+end)
+
+hs.hotkey.bind(hyper, "k", function ()
+  local win = hs.window.focusedWindow()
+  if win then
+    win:moveOneScreenNorth(0)
+  end
+end)
